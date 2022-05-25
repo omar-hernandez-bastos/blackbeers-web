@@ -9,8 +9,8 @@ import { StaticImage } from "gatsby-plugin-image"
 const navigation = [
   { name: "Nuestra Historia", href: "#story" },
   { name: "Servicios", href: "#services" },
-  { name: "Tienda", href: "#" },
-  { name: "Blog", href: "#" },
+  { name: "Tienda", href: "https://walink.co/06e40c" },
+  { name: "Blog", href: "" },
   { name: "Contacto", href: "#" },
 ]
 
@@ -44,7 +44,7 @@ const IndexPage = () => (
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                <div className="hidden w-full md:flex justify-between items-center md:ml-10 md:pr-4">
                   {navigation.map(item => (
                     <a
                       key={item.name}
@@ -87,7 +87,7 @@ const IndexPage = () => (
                       </Popover.Button>
                     </div>
                   </div>
-                  <div className="px-2 pt-2 pb-3 space-y-1">
+                  <div className="px-2 pt-2 pb-3 space-y-1 flex items-center">
                     {navigation.map(item => (
                       <a
                         key={item.name}
@@ -126,13 +126,7 @@ const IndexPage = () => (
     </div>
 
     <section id="story" className="max-w-6xl p-4 mx-auto">
-      <p className="text-lg text-gray-900">
-        <i>
-          <strong>Blackbeers</strong>
-        </i>{" "}
-        es una empresa familiar en crecimiento, en la que amamos la cerveza y
-        disfrutamos mucho todo su proceso. Nuestro principal objetivo es HABLA
-        CON NOSOTR@S{" "}
+      <p className="text-lg text-gray-900 text-justify">
         <i>
           <strong>Blackbeers</strong>
         </i>{" "}

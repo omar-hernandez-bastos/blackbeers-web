@@ -11,7 +11,7 @@ import Carousel from "react-elastic-carousel"
 const blackBeersServices = [
   {
     img: mantenimiento,
-    title: "Limpieza y mantenimiento:",
+    title: "Limpieza y mantenimiento",
     description:
       "A todos tus sistemas y circuitos de cerveza. Un buen mantenimiento garantiza que puedas servir una muy rica cerveza. ",
   },
@@ -64,10 +64,10 @@ const Services = () => {
             <div key={s.title} aria-label={s.title}>
               <div className="p-5 max-w-lg my-4 mx-auto">
                 <img src={s.img} alt={s.title} className="w-full" />
-                <h5 className="mb-2 text-center my-2 text-2xl font-bold tracking-tight text-gray-900">
+                <h5 className="h-16 flex items-center justify-center mb-2 text-center my-2 text-2xl font-bold tracking-tight text-gray-900 no-wrap">
                   {s.title}
                 </h5>
-                <p className="mb-3 font-normal text-gray-700">
+                <p className="mb-3 font-normal text-gray-700 text-center">
                   {s.description}
                 </p>
               </div>
